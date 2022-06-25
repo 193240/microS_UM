@@ -16,7 +16,7 @@ router.post('/', (req, res) => {
         movies.push(newMovie);
         res.json(movies);
     } else {
-        res.status(500).json({error: 'There was an error.'});
+        res.status(500).json({error: 'Ha ocurrido un error'});
     }
 });
 
@@ -34,7 +34,7 @@ router.put('/:id', (req, res) => {
         });
         res.json(movies);
     } else {
-        res.status(500).json({error: 'There was an error.'});
+        res.status(500).json({error: 'Ha ocurrido un error'});
     }
 });
 
